@@ -1,0 +1,246 @@
+/* variables css */
+:root {
+  --font: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  background-color: #0d1b2a;
+}
+
+.main {
+  width: 100%;
+}
+.contenedor-1 {
+  margin-top: 120px;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/centroCortada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  position: relative;
+  z-index: -2;
+}
+
+.opacity {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  background-color: rgba(15, 7, 46, 0.5);
+  z-index: -1;
+}
+.cabecera {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav{
+    padding: 0 220px;
+}
+.navegacion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px, 28px;
+  position: fixed;
+  background-color: #0d1b2a;
+}
+
+@media (max-width: 850px) {
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    
+  }
+  .navegacion a {
+    margin-bottom: 12px;
+  }
+  .contenedor-1 {
+    margin-top: 420px;
+    background-image: none;
+  }
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+}
+.link:hover {
+  background-color: #f64b3c;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20%; */
+  z-index: 10;
+}
+.banner_textos {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.title {
+  font-size: bold;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.text {
+  font-size: bold;
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+.btn {
+  background-color: #f64b3c;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  width: 250px;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+.contenedor-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+}
+.container-text {
+  width: 60%;
+}
+.text-conocenos {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.fotos {
+  width: 80%;
+  margin: auto;
+  padding: 50px 160px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+.fotos .foto_img{
+  width: 100%;
+  margin: 10px;
+}
+
+
+.title-card {
+  color: white;
+  margin-bottom: 12px;
+}
+.parrafo {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+@media (max-width: 850px) {
+  .fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .img {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .title-card {
+    text-align: center;
+  }
+  .parrafo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    padding: 0 30px;
+  }
+}
+.contenedor-3 {
+  width: 70%;
+  display: center;
+  justify-content: center;
+  text-align: center;
+
+}
+video{
+  padding-top: 20px;
+  width: 60%;
+  margin: auto;
+  display: block;
+
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.contact input,textarea,select {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #7b7b7d83;
+  
+}
+
+.contact button {
+  background-color: #de0d0d;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #7b7b7d83;
+  margin-bottom: 15px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.contact h1{
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+
+footer {
+  max-height: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+
+
+
+
